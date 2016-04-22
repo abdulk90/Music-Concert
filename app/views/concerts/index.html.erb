@@ -1,0 +1,15 @@
+<h2>Click on the artist for more details!</h2>
+	<ul>
+
+
+	<% @concerts.each do |concert| %>
+
+	<img src="http://a.deviantart.net/avatars/k/i/kiwi-cupcake.gif?10">
+	Artist: <u><a href="/concerts/<%= concert.id %>"><%= concert.artist %></a><br></u>
+	Date: <%= concert.date %><br><br>
+
+
+	<% end %>
+
+	</ul>
+
