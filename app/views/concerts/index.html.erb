@@ -1,15 +1,37 @@
-<h2>Click on the artist for more details!</h2>
-	<ul>
 
+
+
+<div class"container" >
+	
+	<div class="row">
+		<div class="col-md-5"></div>
+		<div class="col-md-1" align=center><a class="btn btn-primary" href="#" role="button">Home</a></div>
+		<div class="col-md-1" alighn=center><a class="btn btn-primary" href="#" role="button">Concerts</a></div>
+		<div class="col-md-5"></div>
+	</div>
+	<div class="row">
+  		<div class="col-md-4"></div>
+  		<div class="col-md-4">
+<h3>Click on the artist for more details!</h3>
+		</div>
+	</div>
+</div>
+	<ul>
+<div class"container">
+	<div class="row">
+  		<div class="col-md-4"></div>
+  		<div class="col-md-4">
 
 	<% @concerts.each do |concert| %>
 
 	<img src="http://a.deviantart.net/avatars/k/i/kiwi-cupcake.gif?10">
-	Artist: <u><a href="/concerts/<%= concert.id %>"><%= concert.artist %></a><br></u>
+	<u><a class="btn btn-default" href="/concerts/<%= concert.id %>" role="button"><%= concert.artist %></a></u>
 	Date: <%= concert.date %><br><br>
 
 
 	<% end %>
-
+		</div>
+	</div>
+</div>
 	</ul>
 

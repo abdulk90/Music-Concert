@@ -5,16 +5,30 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 </head>
 <body>
 
+<div class"container">
+	<div class="row">
+  		<div class="col-md-4"></div>
+  		<div class="col-md-4">
 <header>
-<h1><marquee>ConcertHub</marquee></h1>
+<h1><marquee>Concert-Hub</marquee></h1>
 </header>
+		</div>
+	</div>
+
+</div>
 
 <%= yield %>
-
+<div class"container">
+	<div class="row">
+  		<div class="col-md-4"></div>
+  		<div class="col-md-4">
 <h3> Contact us to get your concert listed! </h3>
-
+		</div>
+	</div>
+</div>
 </body>
 </html>
